@@ -16,6 +16,6 @@ WORKDIR app
 
 EXPOSE 9000/tcp
 
-COPY --from=build /app/target/personal-project-online-test.jar spring-boot.jar
+COPY --from=build /app/target/belajar-jenkins.jar spring-boot.jar
 
 ENTRYPOINT ["java", "-jar", "spring-boot.jar"]
